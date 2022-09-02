@@ -98,9 +98,14 @@ tower3.addEventListener("dragenter", (e) => {
 });
 
 restart.addEventListener("click", () => {
-  localStorage.setItem('max', counter < savedScore ? `${counter}` : `${savedScore}`);
+  if(!savedScore) {
+    localStorage.setItem('max',`${counter}`);
+  } else{
+    localStorage.setItem('max', counter < savedScore ? counter : savedScore)
+  }
 	window.location.reload();
 });
 
-let savedScore = localStorage.getItem('max') ? localStorage.getItem('max') : 0;
+let savedScore = localStorage.getItem('max') ? parseInt(localStorage.getItem('max')) : 0;
 bestScore.innerHTML = `Best score: ${savedScore}`;
+console.log(savedScore);
