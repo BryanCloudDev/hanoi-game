@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Hanoi - Game</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="status">
+      <p class="points" id="points">Points: 0</p>
+      <p class="result" id="youWin">You Win!!! <button>Restart</button></p>
+      <p id="bestScore"></p>
+    </div>
+    <main class="game">
+      <section class="tower" id="tower1">
+        <div class="disk-container">
+          <div class="disk disk-1" id="disk-1" draggable="true"></div>
+          <div class="disk disk-2" id="disk-2" ondragstart="return false;"></div>
+          <div class="disk disk-3" id="disk-3" ondragstart="return false;"></div>
+          <div class="disk disk-4" id="disk-4" ondragstart="return false;"></div>
+        </div>
+        <div class="rod"></div>
+        <div class="base"></div>
+      </section>
+      <section class="tower" id="tower2">
+        <div class="disk-container"></div>
+        <div class="rod"></div>
+        <div class="base"></div>
+      </section>
+      <section class="tower" id="tower3">
+        <div class="disk-container"></div>
+        <div class="rod"></div>
+        <div class="base"></div>
+      </section>
+    </main>
+  </div>
+  <script src="./index.js"></script>
+</body>
+
+</html>

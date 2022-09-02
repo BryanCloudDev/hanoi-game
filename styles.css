@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.status {
+  width: 100%;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px;
+}
+
+.status .result {
+  display: none;
+}
+
+.game {
+  width: 90%;
+  height: 35rem;
+  max-width: 100rem;
+  min-width: 50rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tower {
+  width: calc(100% / 3);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.disk {
+  height: 4rem;
+}
+
+.disk-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end ;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.rod {
+  width: 2rem;
+  height: 100%;
+  background-color: brown;
+}
+
+.base {
+  width: 100%;
+  height: 2rem;
+  background-color: brown;
+}
+
+.disk-1 {
+  width: 25%;
+  background-color: rgb(30, 101, 244);
+}
+
+.disk-2 {
+  width: 50%;
+  background-color: rgb(242, 27, 27);
+}
+
+.disk-3 {
+  width: 75%;
+  background-color: rgb(25, 251, 228);
+}
+
+.disk-4 {
+  width: 100%;
+  background-color: blueviolet;
+}
