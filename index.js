@@ -108,4 +108,3 @@ restart.addEventListener("click", () => {
 
 let savedScore = localStorage.getItem('max') ? parseInt(localStorage.getItem('max')) : 0;
 bestScore.innerHTML = `Best score: ${savedScore}`;
-console.log(savedScore);
